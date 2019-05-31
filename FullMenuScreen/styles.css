@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffc200;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: none;
+    z-index: 99;
+}
+
+.logoSection{
+    height: 100%;
+    width: 50%;
+    background-color: #FCFCFC;
+    box-shadow: 10px 10px 30px rgba(0,0,0,.4);
+    position: absolute;
+    z-index: 999;
+}
+
+.logoSection img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.menuSection{
+    height: 100%;
+    width: 50%;
+    background-color: #F1F1F1;
+    position: absolute;
+    left: 50%;
+}
+.img_logo{
+    width: 150px;
+    height: 150px;
+}
+.menuSection ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 30%;
+    left: -1%;
+}
+.menuSection ul li{
+    height: 100px;
+    width: 350px;
+    font-family: 'Lalezar';
+    font-size: 60px;
+    line-height: 100px;
+    cursor: pointer;
+}
+.menu{
+    height: 100px;
+    width: 0;
+    background-color: #FFC200;
+    display: flex;
+    position: absolute;
+    left: -50%;
+    cursor: pointer;
+    pointer-events: none;
+    transition: all .5s;
+}
+.rotate{
+    pointer-events: none;
+}
+.menuSection ul li:hover .menu{
+    width: 350px;
+}
+.openMenu, .closeMenu{
+    height: 100px;
+    width: 100px;
+    background-color: #262626;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    cursor: pointer;
+}
+.openMenu{
+    left: 0;
+}
+.closeMenu{
+    left: 100%;
+}
+.head{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../WEB/PaginaAG/demo2/Imagenes/Fondo02.jpg);
+    background-size: cover;
+    position: absolute;
+    overflow: hidden;
+}
+.icono{
+    position: absolute;
+    color: white;
+    width: 80px;
+    height: 80px;
+}
+.icono i{
+    width: 50px;
+    height: 50px;
+}

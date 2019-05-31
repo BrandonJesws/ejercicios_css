@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Full Menu Sreen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <div class="openMenu">
+        <div class="icono"><i class="far fa-bars"></i></div>
+    </div>
+    <div class="closeMenu"></div>
+    <div class="main">
+        <div class="logoSection">
+            <img class="img_logo" src="../../WEB/PaginaAG/img/logoAGgris.png" alt="">
+        </div>
+        <div class="menuSection">
+            <ul>
+                <li onmouseover = "anim('about')"> <!-- Le pasamos como parametro el id-->
+                    <div id="about" class="menu">
+                        ABOU
+                        <div class="rotate">T</div>
+                    </div>
+                </li>
+                <li onmouseover="anim('work')">
+                    <div id="work" class="menu">
+                        WOR
+                        <div class="rotate">K</div>
+                    </div>
+                </li>
+                <li onmouseover="anim('services')">
+                    <div id="services" class="menu">
+                        SERVICE
+                        <div class="rotate">S</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="head">
+    
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
